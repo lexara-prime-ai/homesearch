@@ -6,3 +6,6 @@ Homesearch is a Real Estate Application that makes searching for Rentals easy an
 $ node .
 ```
 
+## Preview
+![App preview](https://github.com/projectfinalaudio/homesearch/blob/master/preview.png?raw=true)
+
