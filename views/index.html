@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Homesearch | Home Screen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="text/javascript" src="../node_modules/androidjs/lib/androidjs.js"></script>
+</head>
+
+<!----------------- APP STYLING ----------------->
+<style>
+  :root {
+    --primary: #e046f8;
+    --light: #a0aaff;
+    --light-alt: #6d7cff;
+    --neutral: #3a4eff;
+    --dark: #0d0f13;
+    --dark-alt: #222831;
+    --gray: #37414f;
+    --shadow: 0 1rem 1rem 0 rgba(0, 0, 0, .2);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    transition: .4s all ease;
+    text-transform: capitalize;
+  }
+
+  body {
+    background: var(--dark-alt);
+    color: var(--almond);
+  }
+
+  .app {
+    font-size: 1.5rem;
+  }
+</style>
+
+<body>
+  <!----------------- APP CONTENT ----------------->
+  <main class="app">
+    <header>
+      <img src="../assets/images/logos/png/Color logo - no background.png" alt="logo" class="logo">
+    </header>
+    <div class="container">
+      <h2 class="page-heading">
+        <span>New </span>Rentals
+      </h2>
+      <h3 class="sub-heading">
+        View Rentals near you
+        <i class="fas fa-search search-icon"></i>
+      </h3>
+
+
+      <!-- NEW RENTALS -->
+      <section class="new-property">
+        <div class="box">
+          <img src="../assets/images/property/rent3.webp" alt="property" class="property">
+          <h2 class="property-name">
+            Property Name
+          </h2>
+          <h3 class="rates">
+            KES5,000<span>8,000</span>
+          </h3>
+          <hr>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem in est totam dolores eos rerum animi? Nobis
+            maxime non consequatur!
+          </p>
+          <!------- BUTTONS -------->
+          <div class="buttons">
+            <button class="view-more">
+              Show Less <i class="fas fa-angle-up"></i>
+            </button>
+            <button class="view-property">
+              View Property
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="box">
+          <img src="../assets/images/property/rent4.jpg" alt="property" class="property">
+          <h2 class="property-name">
+            Property Name
+          </h2>
+          <h3 class="rates">
+            KES5,000<span>8,000</span>
+          </h3>
+          <hr>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem in est totam dolores eos rerum animi? Nobis
+            maxime non consequatur!
+          </p>
+          <!------- BUTTONS -------->
+          <div class="buttons">
+            <button class="view-more">
+              Show Less <i class="fas fa-angle-up"></i>
+            </button>
+            <button class="view-property">
+              View Property
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+
+          <div class="box">
+            <img src="../assets/images/property/rent5.webp" alt="property" class="property">
+            <h2 class="property-name">
+              Property Name
+            </h2>
+            <h3 class="rates">
+              KES10,000<span>18,000</span>
+            </h3>
+            <hr>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem in est totam dolores eos rerum animi?
+              Nobis maxime non consequatur!
+            </p>
+            <!------- BUTTONS -------->
+            <div class="buttons">
+              <button class="view-more">
+                Show Less <i class="fas fa-angle-up"></i>
+              </button>
+              <button class="view-property">
+                View Property
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+
+            <div class="box">
+              <img src="../assets/images/property/rent6.webp" alt="property" class="property">
+              <h2 class="property-name">
+                Property Name
+              </h2>
+              <h3 class="rates">
+                KES7,000<span>8,000</span>
+              </h3>
+              <hr>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem in est totam dolores eos rerum animi?
+                Nobis maxime non consequatur!
+              </p>
+              <!------- BUTTONS -------->
+              <div class="buttons">
+                <button class="view-more">
+                  Show Less <i class="fas fa-angle-up"></i>
+                </button>
+                <button class="view-property">
+                  View Property
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+      </section>
+    </div>
+
+
+    <!------------- BOTTOM NAVIGATION ------------>
+    <nav class="navigation">
+      <a href="https://github.com/projectfinalaudio" class="logo">
+        <i class="fas fa-home icon"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-bookmark icon"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-user icon"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-message icon"></i>
+      </a>
+    </nav>
+  </main>
+
+  <script src="../assets/fonts/fontawesome/js/all.js"></script>
+  <script type="text/javascript" src="../assets/script.js"></script>
+  <script src="../assets/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/popper.min.js"></script>
+  <!----------------- CONTENT STYLING ----------------->
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 1rem;
+      background: transparent;
+      box-shadow: var(--shadow);
+    }
+
+    .logo {
+      width: 40%;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .container {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .page-heading {
+      color: var(--primary);
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+
+    .page-heading span {
+      color: var(--light-alt);
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .sub-heading {
+      color: var(--primary);
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    .search-icon {
+      color: var(--light-alt);
+      cursor: pointer;
+      font-size: 1.5rem;
+      animation: heartbeat 2s infinite;
+    }
+
+    /****** PROPERTY STYLING STARTS HERE ******/
+    .new-property {
+      margin-top: 2rem;
+    }
+
+    .property {
+      width: 100%;
+      border-radius: 18px;
+      border: 1px solid transparent;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+    }
+
+    .property:hover {
+      animation: property_glow 2s infinite;
+    }
+
+    /* PROPERTY GLOW ANIMATION */
+    @keyframes property_glow {
+      0% {
+        border: 1px solid #6d7cff;
+      }
+
+      50% {
+        border: 1px solid transparent;
+      }
+
+      100% {
+        border: 1px solid #6d7cff;
+      }
+    }
+
+    .property-name {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--primary);
+    }
+
+    .rates {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--primary);
+    }
+
+    .rates span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #7e86cc;
+      text-decoration: line-through;
+    }
+
+    hr {
+      border-top: none;
+      color: #8e2f9c;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    .description {
+      text-align: right;
+      font-size: .9rem;
+      font-weight: 400;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .view-more,
+    .view-property {
+      border: none;
+      padding: .6rem;
+      width: 200px;
+      background: transparent;
+      color: #8e2f9c;
+      font-size: 1rem;
+      border: 1.9px solid #8e2f9c;
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+      cursor: pointer;
+    }
+
+    .view-more:hover {
+      background: var(--primary);
+      color: var(--dark-alt);
+      box-shadow: var(--shadow);
+    }
+
+    .view-property:hover {
+      background: var(--primary);
+      color: var(--dark-alt);
+      box-shadow: var(--shadow);
+    }
+
+    .view-property {
+      margin-bottom: 3rem;
+    }
+
+    /* BOTTOM NAVIGATION STYLING */
+    nav {
+      overflow: hidden;
+      position: fixed;
+      background: var(--dark-alt);
+      border-top: 1px solid #29313b;
+      bottom: 0;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 1rem;
+    } 
+
+    nav a {
+      text-decoration: none;
+      padding: 0 1.3rem;
+      color: #ca42dfdc;
+    }
+
+    nav a:hover {
+      color: #a0aaff;
+    }
+
+    .icon:hover {
+      transform: scale(.85);
+    }
+
+
+
+    /******************** ANIMATIONS *******************/
+    /* ----------------------------------------------
+ * Generated by Animista on 2023-2-25 23:30:54
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+    /**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+    @-webkit-keyframes heartbeat {
+      from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+
+      10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+
+      17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+
+      33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+
+      45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+    }
+
+    @keyframes heartbeat {
+      from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+
+      10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+
+      17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+
+      33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+      }
+
+      45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+      }
+    }
+  </style>
+  <script type="text/javascript">
+    function toggle_popover() {
+      $('#popover').popover('toggle')
+    }
+  </script>
+</body>
+
+</html>
